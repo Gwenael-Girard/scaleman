@@ -6,6 +6,7 @@ specifiers:
   '@vue/cli-plugin-vuex': ~5.0.0
   '@vue/cli-service': ~5.0.0
   core-js: ^3.8.3
+  normalize-scss: ^7.0.1
   sass: ^1.32.7
   sass-loader: ^12.0.0
   vue: ^3.2.13
@@ -14,6 +15,7 @@ specifiers:
 
 dependencies:
   core-js: 3.27.1
+  normalize-scss: 7.0.1
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
   vuex: 4.1.0_vue@3.2.45
@@ -4484,6 +4486,10 @@ packages:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /normalize-scss/7.0.1:
+    resolution: {integrity: sha512-qj16bWnYs+9/ac29IgGjySg4R5qQTp1lXfm7ApFOZNVBYFY8RZ3f8+XQNDDLHeDtI3Ba7Jj4+LuPgz9v/fne2A==}
+    dev: false
 
   /normalize-url/6.1.0:
     resolution: {integrity: sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==}
