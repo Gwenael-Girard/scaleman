@@ -6,7 +6,7 @@
                 <option v-for="note in this.getNotes" :value="this.getNotes.indexOf(note)">{{ note }}</option>
             </select>
 
-            <span>Gamme de {{this.getNotes[this.selectedNote]}}</span>
+            <span class="titre">Gamme de {{this.getNotes[this.selectedNote]}}</span>
 
             <NotationSwitch />
         </div>
@@ -121,12 +121,17 @@ export default {
     .note-selector {
         border-radius: 0;
         border: 3px solid black;
-        background-color: $lightgray;
+        background-color: $white;
         height: 32px;
         width: 64px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $lightgray;
+        }
     }
 
-    span {
+    .titre {
         color: $white;
         font-weight: bold;
         font-size: 2em;

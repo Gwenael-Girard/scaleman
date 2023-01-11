@@ -4,6 +4,7 @@ $darkgray: lighten($black, 20);
 $lightgray: darken($white, 5);
 
 $accent: #649ce5;
+$accentLight: lighten($accent, 10);;
 $accentMid: darken($accent, 30);
 $accentDark: darken($accent, 45);
 

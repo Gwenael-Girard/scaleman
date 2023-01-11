@@ -1,7 +1,9 @@
 <template>
         <label class="toggle-switch">
             <input type="checkbox" v-model="this.switchState" @click="this.updateNotes">
-            {{this.switchState ? "b" : "#"}}
+            <span class="slider"></span>
+            <span class="label">#</span>
+            <span class="label">b</span>
         </label>
 </template>
 
@@ -27,22 +29,43 @@ export default {
 
 <style scoped lang="scss">
 
-$width: 32px;
+$width: 58px;
 $height: 32px;
 
 .toggle-switch {
-    background-color: $lightgray;
+    background-color: $white;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: $height;
     width: $width;
     border: 3px solid $black;
     user-select: none;
 
+    .label {
+        height: 100%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+    }
+
+    .slider {
+        position: absolute;
+        aspect-ratio: 1;
+        height: 100%;
+        background-color: $accentLight;
+    }
+
+    input[type="checkbox"]:checked + span.slider {
+        transform: translateX(100%);
+    }
+
     &:hover {
         cursor: pointer;
+        background-color: $lightgray;
     }
 
     input {
